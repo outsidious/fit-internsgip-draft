@@ -1,0 +1,4 @@
+<div *ngFor="let user of userService.users">
+    <p>{{user.firstName}} {{user.lastName}} {{user.age}}</p>
+    <button (click)="userService.delete(user.id)">Удалить</button>
+</div>
